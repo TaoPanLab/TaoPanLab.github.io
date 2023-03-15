@@ -36,3 +36,8 @@ $black-color: #000000 !default;
 
 $code-bg-color-light:     rgba($purple-color, 0.05);
 $code-bg-color-dark:      #2c3237 !default;
+
+// own colors
+
+$awesome-color: #1f5394 !default;
+$awesome-color-light: lighten($awesome-color, 40%); 

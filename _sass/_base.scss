@@ -276,6 +276,7 @@ blockquote {
 footer.fixed-bottom {
   background-color: var(--global-footer-bg-color);
   font-size: 0.75rem;
+  border-top: 1px solid var(--global-divider-color);
   .container {
     color: var(--global-footer-text-color);
     padding-top: 9px;
@@ -615,7 +616,6 @@ figure.highlight {
 
 pre {
   color: var(--global-theme-color);
-  background-color: var(--global-code-bg-color);
   border-radius: 6px;
   padding: 6px 12px;
   pre, code {

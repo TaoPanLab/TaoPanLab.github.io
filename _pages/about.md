@@ -1,25 +1,37 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: 
+
 
 profile:
   align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
-  address: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+  image: me.jpg
+  image_circular: true # crops the image to make it circular
+  location: University of Chicago, US
+  email: andrebauer@uchicago.edu
+  googlescholar: https://scholar.google.de/citations?user=E8LJS8UAAAAJ&hl
+  uri: http://www.cfn.uchicago.edu/people/andre-bauer/
+  
 
 news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true  # includes social icons at the bottom of the page
+social: false  # includes social icons at the bottom of the page
+
+showbib: false
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am a computer scientist working as a postdoctoral scholar at [Globus Labs](https://labs.globus.org/) led by Prof. Ian Foster in the Department of Computer Science at the University of Chicago since November 2022. I am also the founder and elected chair of the [SPEC RG Predictive Data Analytics Working Group](https://research.spec.org/working-groups/rg-predictive-data-analytics/).
 
-Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+In a nutshell, my research objective is the application of data science across disciplines and domains. To this end, I address the challenges of data analytics clouds from performance engineering, sustainability, and data analytics perspectives. More precisely, my research vision encompasses the following three main pillars:
+* Improvement of data analytics methods as well as their infrastructure (i.e., improve performance).
+* Development of an automated framework to streamline the data analytics task (i.e., improve usability).
+* Raise awareness and support for sustainable data analytics (i.e., improve energy efficiency).
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+In general, my research interest lies in, but is not limited to:
+* Data management: The focus is on FAIR (findable, accessible, interoperable, and reusable) data management and the promotion of publicly available research data.
+* Data privacy: The idea here is to exchange data with third parties, preserving the privacy of the data. I am interested in synthetic data generation and homomorphic encryption.
+* Data analytic clouds: I am interested in the development, autonomous management (i.e., autonomous scaling of resources), benchmarking of various building blocks of such clouds, and runtime prediction and scheduling of data analytic tasks.
+* Data analytics: My focus is on data analytics, clustering, and imputation. I am also interested in benchmarking and developing data analytics methods. In addition, I work on the application of such methods in interdisciplinary projects.
+* Sustainable data science: Specifically, this involves the development of an energy efficiency benchmark for Deep and Machine Learning.
