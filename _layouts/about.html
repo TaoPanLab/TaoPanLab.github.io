@@ -131,17 +131,18 @@ layout: default
             {{ content }}
           </div>
 
+          <!-- News -->
+          {% if page.news -%}
+            <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit;">Most Recent News</a></h2>
+            An overview of all news can be found at <a href="{{ '/news/' | relative_url }}" style="color: inherit;">here</a>.
+            {%- include news.html %}
+          {%- endif %}
+
           <!-- Selected papers -->
           {% if page.selected_papers -%}
             <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">Selected Publications</a></h2>
             {%- include selected_papers.html %}
           {%- endif %}
-
-          <!-- News -->
-          {% if page.news -%}
-            <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit;">News</a></h2>
-            {%- include news.html %}
-          {%- endif %}    
               
           <!-- Social -->
           {%- if page.social %}
