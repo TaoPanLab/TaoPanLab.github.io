@@ -11,7 +11,7 @@ layout: default
                 
           <article>
 
-                  {% if page.cv_pdf %}A detailed version of my CV can be seen <a href="{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url}}" target="_blank" rel="noopener noreferrer" class="float-right">here <i class="fas fa-file-pdf"></i></a>.{% endif %}
+                  {% if page.cv_pdf %}A detailed version of my CV can be seen <a href="{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url}}" target="_blank" rel="noopener noreferrer">here <i class="fas fa-file-pdf"></i></a>.{% endif %}
 
                   {{ content }}
                   
