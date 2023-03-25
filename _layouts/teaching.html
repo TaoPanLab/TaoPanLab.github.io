@@ -6,7 +6,6 @@ layout: default
 
           <header class="post-header">
             <h1 class="post-title">{{ page.title }} </h1>
-            <p class="post-description">{{ page.description }}</p>
           </header>
 
           <article>
@@ -61,7 +60,7 @@ layout: default
                   {% for entry in site.data.teaching %}
               {% for content in entry.contents %}
                 <tr>
-                  <td >
+                  <td class = "list-group-item">
                       <span class="badge font-weight-bold danger-color-dark align-middle" style="width: 100%;">
                                             {{ content.year }}
                       </span>
@@ -70,7 +69,7 @@ layout: default
                     <h6 class="title font-weight-bold ml-1 ml-md-4">{{content.title}}</h6>
                                             <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem;">{{content.role}}</h6>
                   </td>
-                    <td>
+                    <td class = "text-center">
                     <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem;">{{content.level}}</h6>
                                             <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem;">
                                                 {% if content.language == "English" %}
