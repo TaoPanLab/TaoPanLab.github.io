@@ -4,17 +4,15 @@ permalink: /news/
 title: News
 nav: true
 nav_order: 1
-groups : [mar23, feb23, jan23]
+groups : [Mar, Feb, Jan]
 ---
 
 All news are listed in reversed chronological order.
 
-<!-- _pages/news.md -->
-
 {%- for g in page.groups %}
   <h2 class="year">{{g}}</h2>
   {%- assign news = site.news | reverse -%}
-  {% assign n = news | where_exp:"item", "item.group == g" %}
+  {% assign n = news | where_exp:"item", "item.date | date: "%b" == g" %}
     <table class="table table-sm table-borderless">
               {% for item in n %}
                 <tr>
