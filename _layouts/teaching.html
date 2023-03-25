@@ -53,4 +53,35 @@ layout: default
               </div>
           </article>
 
+            <div class="table-responsive" {% if site.news_scrollable and news_size > 3 %}style="max-height: 10vw"{% endif %}>
+              <table class="table table-sm table-borderless">
+              {% for content in entry.contents %}
+                <tr>
+                  <td >
+                      <span class="badge font-weight-bold danger-color-dark align-middle" style="width: 100%;">
+                                            {{ content.year }}
+                      </span>
+                  </td>
+                  <td>
+                    <h6 class="title font-weight-bold ml-1 ml-md-4">{{content.title}}</h6>
+                                            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem;">{{content.role}}</h6>
+                  </td>
+                    <td>
+                    <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem;">{{content.level}}</h6>
+                                            <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem;">
+                                                {% if content.language == "English" %}
+                                                    🇺🇸
+                                                {% else %}
+                                                    🇩🇪
+                                                {% endif %}
+                                            </h6>
+                  </td>
+                </tr>
+              {%- endfor %}
+              </table>
+            </div>
+
+
         </div>
+
+
