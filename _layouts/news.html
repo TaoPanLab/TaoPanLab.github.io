@@ -2,19 +2,43 @@
 layout: default
 ---
 <!-- _layouts/cv.html -->
-        <div class="post">
+<div class="post">
 
-          <header class="post-header">
-            <h1 class="post-title">{{ page.title }}</h1>
-            <p class="post-description">{{ page.description }}</p>
-          </header>
-                
-          <article>
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    <p class="post-description">{{ page.description }}</p>
+  </header>
 
-           {{ content }}
+  <article>
 
-           {%- include news.html %}
+   {{ content }}
 
-          </article>
+      <div class="publications">
+          {% assign postsByYearMonth = site.news | group_by_exp:"item", "item.date | date: '%b %Y'" | reverse %}
+          {% for yearMonth in postsByYearMonth %}
+          <h2 class="year">{{ yearMonth.name }}</h2>
+          <ol class="bibliography">
+              {%- assign news = yearMonth.items | reverse -%}
+              {% for item in news %}
+              <li>
+                  <div class="row">
+                      <div class="col-sm-2">
+                          {{ item.date | date: "%b %-d, %Y" }}
+                      </div>
+                      <div class="col-sm-8">
+                          {% if item.inline -%}
+                          {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
+                          {%- else -%}
+                          <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+                          {%- endif %}
+                      </div>
+                  </div>
+              </li>
+              {% endfor %}
+          </ol>
+          {% endfor %}
+      </div>
 
-        </div>
+  </article>
+
+</div>
