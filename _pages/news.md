@@ -13,7 +13,7 @@ All news are listed in reversed chronological order.
 {% for yearMonth in postsByYearMonth %}
   <h3>{{ yearMonth.name }}</h3>
     <table class="table table-sm table-borderless">
-      {% for item in yearMonth.items %}
+      {% for item in yearMonth.items | reverse %}
         <tr>
                   <th scope="row" class="news-date">{{ item.date | date: "%b %-d, %Y" }}</th>
                   <td>
