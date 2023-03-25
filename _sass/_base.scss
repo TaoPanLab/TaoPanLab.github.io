@@ -465,7 +465,7 @@ footer.sticky-bottom {
 // Publications
 
 .publications {
-  margin-top: 2rem;
+
   h1 {
     color: var(--global-theme-color);
     font-size: 2rem;
@@ -482,7 +482,7 @@ footer.sticky-bottom {
   h2.year {
     color: var(--global-divider-color);
     border-bottom: 1px solid var(--global-divider-color);
-    margin-top: -2rem;
+    margin-top: 2rem;
     text-align: right;
   }
   ol.bibliography {
