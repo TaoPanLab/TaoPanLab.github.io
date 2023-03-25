@@ -18,7 +18,7 @@ All news are listed in reversed chronological order.
             <div class="col-sm-2">
                 {{ item.date | date: "%b %-d, %Y" }}
             </div>
-            <div class="col-sm-2">
+            <div class="col-sm-8">
                 {% if item.inline -%}
                   {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
                 {%- else -%}
