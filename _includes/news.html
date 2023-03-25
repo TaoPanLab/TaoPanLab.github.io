@@ -35,7 +35,7 @@
 {%- for g in page.groups %}
   <h2 class="year">{{g}}</h2>
   {%- assign news = site.news | reverse -%}
-  {% news | where_exp:"item",
+  {% assign n = news | where_exp:"item",
 "item.group == g" %}
 {% endfor %}
 
