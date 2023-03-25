@@ -122,6 +122,11 @@ th.news-date {
   font-weight: bold;
 }
 
+td.news-date {
+  white-space: nowrap;
+  font-weight: bold;
+}
+
 /*******************************************************************************
  * Styles for the base elements of the theme.
  ******************************************************************************/
