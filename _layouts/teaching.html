@@ -51,42 +51,6 @@ layout: default
                 {% endfor %}
               </div>
 
-              <div class="cv">
-                {% for entry in site.data.teaching %}
-                    <div class="card mt-3 p-3">
-                      <h3 class="card-title font-weight-medium">{{ entry.title }}</h3>
-                      <div class="table-responsive">
-              <table class="table table-sm table-borderless">
-                  {% for entry in site.data.teaching %}
-              {% for content in entry.contents %}
-                <tr>
-                  <td class = "list-group-item">
-                      <span class="badge font-weight-bold danger-color-dark align-middle" style="width: 100%;">
-                                            {{ content.year }}
-                      </span>
-                  </td>
-                  <td>
-                    <h6 class="title font-weight-bold ml-1 ml-md-4">{{content.title}}</h6>
-                                            <h6>{{content.role}}</h6>
-                  </td>
-                    <td class = "text-center">
-                    <h6>{{content.level}}</h6>
-                                            <h6>
-                                                {% if content.language == "English" %}
-                                                    🇺🇸
-                                                {% else %}
-                                                    🇩🇪
-                                                {% endif %}
-                                            </h6>
-                  </td>
-                </tr>
-              {%- endfor %}
-                  {%- endfor %}
-              </table>
-            </div>
-                    </div>
-                {% endfor %}
-              </div>
           </article>
 
 
