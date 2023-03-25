@@ -9,7 +9,7 @@ nav_order: 1
 All news are listed in reversed chronological order.
 
 <div class="news">
-{% assign postsByYearMonth = site.news | group_by_exp:"item", "item.date | date: '%Y %b'"  %}
+{% assign postsByYearMonth = site.news | group_by_exp:"item", "item.date | date: '%Y %b'" | reverse %}
 {% for yearMonth in postsByYearMonth %}
   <h3>{{ yearMonth.name }}</h3>
     <table class="table table-sm table-borderless">
