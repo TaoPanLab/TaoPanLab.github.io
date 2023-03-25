@@ -53,8 +53,9 @@ layout: default
               </div>
           </article>
 
-            <div class="table-responsive" {% if site.news_scrollable and news_size > 3 %}style="max-height: 10vw"{% endif %}>
+            <div class="table-responsive">
               <table class="table table-sm table-borderless">
+                  {% for entry in site.data.teaching %}
               {% for content in entry.contents %}
                 <tr>
                   <td >
@@ -78,6 +79,7 @@ layout: default
                   </td>
                 </tr>
               {%- endfor %}
+                  {%- endfor %}
               </table>
             </div>
 
