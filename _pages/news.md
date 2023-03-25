@@ -9,24 +9,14 @@ groups : [Mar, Feb, Jan]
 
 All news are listed in reversed chronological order.
 
-{%- for g in page.groups %}
-  <h2 class="year">{{g}}</h2>
-  {%- assign news = site.news | reverse -%}
-  {% assign n = news | where_exp:"item", "item.date | date: "%b" == g" %}
-    <table class="table table-sm table-borderless">
-              {% for item in n %}
-                <tr>
-                  <th scope="row" class="news-date">{{ item.date | date: "%b %-d, %Y" }}</th>
-                  <td>
-                    {% if item.inline -%}
-                      {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
-                    {%- else -%}
-                      <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
-                    {%- endif %}
-                  </td>
-                </tr>
-              {%- endfor %}
-              </table>
+{% assign postsByYearMonth = site.news | group_by_exp:"item", "item.date | date: '%Y %b'"  %}
+{% for yearMonth in postsByYearMonth %}
+  <h3>{{ yearMonth.name }}</h3>
+    <ul>
+      {% for post in yearMonth.items %}
+        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% endfor %}
+    </ul>
 {% endfor %}
 
 
