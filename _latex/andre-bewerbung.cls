@@ -156,6 +156,7 @@
 \newcommand*{\footerstyle}[1]{{\fontsize{8pt}{1em}\footerfont\scshape\color{lighttext} #1}}
 \newcommand*{\sectionstyle}[1]{{\fontsize{16pt}{1em}\bodyfont\bfseries\color{text}\sectioncolor{#1}}}
 \newcommand*{\subsectionstyle}[1]{{\fontsize{12pt}{1em}\bodyfont\scshape\color{text}\subsectioncolor{#1}}}
+\newcommand*{\paragraphstyle}{\fontsize{10pt}{1em}\bodyfont\scshape\textcolor{text}}
 
 % For elements of entry
 \newcommand*{\entrytitlestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
@@ -164,6 +165,11 @@
 \newcommand*{\entrylocationstyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\slshape\color{awesome} #1}}
 \newcommand*{\descriptionstyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\upshape\color{text} #1}}
 
+% For elements of honor
+\newcommand*{\honortitlestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
+\newcommand*{\honororganisationtyle}[1]{{\fontsize{10pt}{1em}\bodyfont\color{graytext} #1}}
+\newcommand*{\honordatestyle}[1]{{\fontsize{9pt}{1em}\bodyfont\color{graytext} #1}}
+\newcommand*{\honorlocationstyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\slshape\color{awesome} #1}}
 
 %-------------------------------------------------------------------------------
 %                Commands for personal information
@@ -273,9 +279,9 @@
 %                Commands for utilities
 %-------------------------------------------------------------------------------
 % Use to align an element of tabular table
-\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
-\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
-\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
 
 % Use to draw horizontal line with specific thickness
 \def\vhrulefill#1{\leavevmode\leaders\hrule\@height#1\hfill \kern\z@}
@@ -458,6 +464,21 @@
   \end{tabular*}%
 }
 
+% Define an entry of cv information to add
+% What, institute, where, when and possible list
+% Usage: \cventry{<position>}{<title>}{<location>}{<date>}{<description>}
+\newcommand*{\cventryToAdd}[3]{%
+  \vspace{-4.0mm}
+  \setlength\tabcolsep{0pt}
+  \setlength{\extrarowheight}{0pt}
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 4.5cm} R{4.5cm}}
+    \entrypositionstyle{#1} & \entrydatestyle{#2}
+    \ifempty{#3}{}{%
+    \\ \multicolumn{2}{L{\textwidth}}{\descriptionstyle{#3}}%
+    }%
+  \end{tabular*}%
+}
+
 
 \newcommand*{\singlecventry}[3]{%
   \vspace{-2.0mm}
@@ -525,13 +546,24 @@
 
 % Two line entry: What, institute, where, when and possible list
 \newcommand*{\mcventry}[8]{%
-  \iflanguage{ngerman}{%
-    %#1 Was #2 institut #3 wo #7 wann #9 liste
-    \cventry{#1}{#2}{#3}{#7}{#8}%
-  }{%
-    %#4 What #5 institue #6 where #7 when #8 list
-    \cventry{#4}{#5}{#6}{#7}{#8}%
-  }%
+    \ifempty{#1}{%
+        \iflanguage{ngerman}{%
+        %#1 Was #2 institut #3 wo #7 wann #9 liste
+            \cventryToAdd{#2}{#7}{#8}%
+        }{%
+        %#4 What #5 institue #6 where #7 when #8 list
+            \cventryToAdd{#5}{#7}{#8}%
+        }%
+    }{%
+        \iflanguage{ngerman}{%
+        %#1 Was #2 institut #3 wo #7 wann #9 liste
+            \cventry{#1}{#2}{#3}{#7}{#8}%
+        }{%
+        %#4 What #5 institue #6 where #7 when #8 list
+            \cventry{#4}{#5}{#6}{#7}{#8}%
+        }%
+    }
+
 }
 
 
@@ -567,6 +599,16 @@
     %#2 Title
     \cvsubsection{#2}%
   }%
+}
+
+% Define a paragraph for CV
+\newenvironment{cvparagraph}{%
+  \vspace{\acvSectionContentTopSkip}
+  \vspace{-3mm}
+  \paragraphstyle
+}{%
+  \par
+  \vspace{2mm}
 }
 
 % Section heading for CV
@@ -648,6 +690,30 @@
 }
 
 
+
+% Define a line of cv information(honor, award or something else)
+% Usage: \cvhonor{<title>}{<organisation>}{<location>}{<date>}{<description>}
+\newcommand*{\cvhonor}[5]{%
+\vspace{-2.0mm}
+  \setlength\tabcolsep{0pt}
+  \setlength{\extrarowheight}{0pt}
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 4.5cm} R{4.5cm}}
+       \honortitlestyle{#1}, \honororganisationtyle{#2} & \entrylocationstyle{#3} \\
+       \descriptionstyle{#5} & \entrydatestyle{#4} \\
+  \end{tabular*}
+}
+
+% Define a line of cv information(honor, award or something else)
+\newcommand*{\mcvhonor}[9]{%
+  \iflanguage{ngerman}{%
+    %#1 Was #2 weitere info #3 wo
+    \cvhonor{#1}{#2}{#3}{#7}{#8}%
+  }{%
+    %#4 What #5 further info #6 where
+    \cvhonor{#4}{#5}{#6}{#7}{#9}%
+  }%
+}
+
 %-------------------------------------------------------------------------------
 %                Othercomands
 %-------------------------------------------------------------------------------
@@ -688,3 +754,8 @@
     \phantomsection%
     \subsection{#1}%
 }
+
+\newcommand{\emaillink}[1]{
+    \href{mailto:#1}{\coloredtext{#1}}
+}
+
