@@ -6,10 +6,7 @@
       year: since 01/2023
     - title: Postdoctoral scholar (Prof. Ian Foster)
       institution: University of Chicago, Chicago, United States
-      year: since 10/2022 
-    - title: Habilitation 
-      institution: University of Würzburg, Würzburg, Germany
-      year: since 07/2022
+      year: since 10/2022
     - title: Research group leader (Prof. Samuel Kounev) 
       institution: University of Würzburg, Würzburg, Germany
       year: 01/2021 - 10/2022
@@ -20,6 +17,9 @@
 - title: Academic Education
   type: time_table
   contents:
+    - title: Habilitation
+      institution: University of Würzburg, Würzburg, Germany
+      year: since 07/2022
     - title: Doctoral candidate, Dr. rer. nat. (Computer Science)
       institution: University of Würzburg, Würzburg, Germany
       year: 10/2016 - 12/2020
@@ -34,13 +34,13 @@
   type: time_table
   contents:
     - title: 2023 SPECtacular Award
-      institution: SPEC, Gainesville, United States
+      institution: Standard Performance Evaluation Corporation, Gainesville, United States
       year: 02/2023
     - title: Leadership Academy Fellowship
       institution: German Scholars Organization, Berlin, Germany
       year: 01/2023
     - title: SPEC Kaivalya Dixit Distinguished Dissertation Award
-      institution: SPEC, Gainesville, United States
+      institution: Standard Performance Evaluation Corporation, Gainesville, United States
       year: 04/2022
     - title: Dissertation Award
       institution: Unterfränkische Gedenkjahrstiftung für Wissenschaft, Würzburg, Germany
@@ -57,8 +57,11 @@
     - title: Deutschlandstipendium
       institution: University of Würzburg, Würzburg, Germany
       year: 10/2014 - 09/2015
+    - title: Heinrich-Thein Award
+      institution: Heinrich-Thein-Stiftung, Haßfurt, Germany
+      year: 11/2009
       
-- title: Academic Functions and Roles
+- title: Academic Service
   type: time_table
   contents:
     - title: Program committee
