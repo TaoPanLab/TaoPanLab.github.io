@@ -512,6 +512,7 @@
 	\item #2 \hfill \entrydatestyle{#1}
 }
 
+
 % Define an environment for cvitems(for cventry)
 \newenvironment{cvitems}{%
   \vspace{-4.0mm}
@@ -651,7 +652,6 @@
   \dategenerator{#1}{#2}{#3} --- \dategenerator{#4}{#5}{#6}
 }
 
-
 % Named list: name, cvitems
 \newcommand*{\cvlist}[2]{%
   \vspace{-2.0mm}
@@ -660,6 +660,16 @@
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth}}
       \entrytitlestyle{#1} \\%
       \descriptionstyle{#2}%
+  \end{tabular*}%
+}
+
+% Named list: name, cvitems
+\newcommand*{\cvlistwithoutname}[1]{%
+  \vspace{-2.0mm}
+  \setlength\tabcolsep{0pt}
+  \setlength{\extrarowheight}{0pt}
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth}}
+      \descriptionstyle{#1}%
   \end{tabular*}%
 }
 
@@ -712,6 +722,37 @@
     %#4 What #5 further info #6 where
     \cvhonor{#4}{#5}{#6}{#7}{#9}%
   }%
+}
+
+
+% Define a line of cv information(honor, award or something else)
+% Usage: \cvhonor{<title>}{<organisation>}{<date>}{<description>}
+\newcommand*{\cvgrant}[4]{%
+\vspace{-2.0mm}
+  \setlength\tabcolsep{0pt}
+  \setlength{\extrarowheight}{0pt}
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 4.5cm} R{4.5cm}}
+       \honortitlestyle{#1}, \honororganisationtyle{#2} & \entrydatestyle{#3} \\
+       \descriptionstyle{#4} &  \\
+  \end{tabular*}
+}
+
+% Define a line of cv information(honor, award or something else)
+\newcommand*{\mcvgrant}[7]{%
+  \iflanguage{ngerman}{%
+    %#1 Was #2 weitere info #3 wo
+    \cvgrant{#1}{#2}{#5}{#6}%
+  }{%
+    %#4 What #5 further info #6 where
+    \cvgrant{#3}{#4}{#5}{#7}%
+  }%
+}
+
+\newenvironment{cvtext}{%
+  \par%
+  \fontsize{10pt}{1em}\bodyfont\color{graytext}%
+}{%
+  \par%
 }
 
 %-------------------------------------------------------------------------------

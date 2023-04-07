@@ -1,0 +1,80 @@
+%================================================
+% Configure Bibliography
+%================================================
+\RequirePackage[maxbibnames=10,backref=true,style=authoryear-comp,maxcitenames=2,backend=biber,natbib=true,uniquelist=false,uniquename=false,giveninits=true]{biblatex}
+\DefineBibliographyStrings{english}{%
+	backrefpage = {see page},% originally "cited on page"
+	backrefpages = {see pages},% originally "cited on pages"
+}
+
+\addbibresource{../_bibliography/papers.bib}
+\AtEveryBibitem{\clearfield{doi}}
+\AtEveryBibitem{\clearfield{url}}
+\AtEveryBibitem{\clearfield{month}}
+\AtEveryBibitem{\clearfield{day}}
+\AtEveryBibitem{\clearfield{isbn}}
+\AtEveryBibitem{\clearfield{issn}}
+\AtEveryCitekey{\clearfield{month}}
+\AtEveryCitekey{\clearfield{day}}
+\AtEveryCitekey{\clearfield{pages}}
+\AtEveryCitekey{\clearfield{extradate}}
+
+\DeclareSourcemap{
+  \maps[datatype=bibtex]{
+    \map[overwrite=true]{
+      \step[fieldset=organization, null]
+      \step[fieldset=publisher, null]
+    }
+  }
+}
+
+%\DeclareSourcemap{
+%	\maps[datatype=bibtex, overwrite]{
+%		\map{
+%			\perdatasource{dissertation.bib}
+%			\step[fieldset=KEYWORDS, fieldvalue=references, append]
+%		}
+%	}
+%}
+
+%https://tex.stackexchange.com/questions/376714/author-name-and-first-name-order-with-biblatex
+\DeclareNameAlias{sortname}{last-first}
+
+%https://tex.stackexchange.com/questions/111363/exclude-fullcite-citation-from-bibliography
+\DeclareBibliographyCategory{inbib}
+
+\makeatletter
+\AtEveryCitekey{%
+	\ifcsstring{blx@delimcontext}{fullcite}
+	{}
+	{\addtocategory{inbib}{\thefield{entrykey}}}}
+\makeatother
+
+%https://tex.stackexchange.com/questions/135930/use-bibentry-with-biblatex
+\makeatletter
+\DeclareCiteCommand{\fullcite}
+{\defcounter{maxnames}{99}%
+	\usebibmacro{prenote}}
+{\usedriver
+	%{\DeclareNameAlias{sortname}{last-first}} %changes order like in bib
+	{\DeclareNameAlias{sortname}{default}}
+	{\thefield{entrytype}}}
+{\multicitedelim}
+{\usebibmacro{postnote}}
+\makeatother
+
+
+
+\makeatletter
+\newcommand{\showbib}[1]{%
+	\nocite{#1}%
+	\noindent \fullcite{#1}.\filbreak
+}
+\makeatother
+
+\makeatletter
+\newcommand{\showbibcv}[1]{%
+	\nocite{#1}%
+	\noindent \fullcite{#1}.
+}
+\makeatother
