@@ -20,7 +20,7 @@
     - title: Habilitation
       institution: University of Würzburg, Würzburg, Germany
       year: since 07/2022
-    - title: Doctoral candidate, Dr. rer. nat. (Computer Science)
+    - title: Dr. rer. nat. (Computer Science)
       institution: University of Würzburg, Würzburg, Germany
       year: 10/2016 - 12/2020
     - title: Master of Science (Computer Science)
@@ -33,6 +33,9 @@
 - title: Awards, Fellowships, and Scholarships
   type: time_table
   contents:
+    - title: GAIN Participation Grant
+      institution: German Academic International Network, Bonn, Germany
+      year: 05/2023
     - title: 2023 SPECtacular Award
       institution: Standard Performance Evaluation Corporation, Gainesville, United States
       year: 02/2023
@@ -64,6 +67,9 @@
 - title: Academic Service
   type: time_table
   contents:
+    - title: Program committee (posters and demos)
+      institution: International Conference on Autonomic Computing and Self-Organizing Systems 2023
+      year: since 05/2023
     - title: Program committee
       institution: International conference on Data Science Technology and Applications 2023
       year: since 03/2023
