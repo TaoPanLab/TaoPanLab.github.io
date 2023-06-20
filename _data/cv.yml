@@ -67,6 +67,9 @@
 - title: Academic Service
   type: time_table
   contents:
+    - title: Program committee
+      institution: Symposium on Software Performance 2023
+      year: since 05/2023
     - title: Program committee (posters and demos)
       institution: International Conference on Autonomic Computing and Self-Organizing Systems 2023
       year: since 05/2023
@@ -78,7 +81,7 @@
       year: since 02/2023
     - title: Program committee
       institution: International Symposium on Cluster, Cloud and Internet Computing 2023
-      year: since 11/2022
+      year: 11/2022 - 05/2023
     - title: Organization committee
       institution: The Second International Workshop on Performance-Data Analytics and Data-Management
       year: 10/2022 - 02/2023
