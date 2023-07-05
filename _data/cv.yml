@@ -68,6 +68,9 @@
   type: time_table
   contents:
     - title: Program committee
+      institution: International Conference on Utility and Cloud Computing 2024
+      year: since 07/2023
+    - title: Program committee
       institution: Symposium on Software Performance 2023
       year: since 05/2023
     - title: Program committee (posters and demos)
