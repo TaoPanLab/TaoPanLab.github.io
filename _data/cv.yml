@@ -67,6 +67,9 @@
 - title: Academic Service
   type: time_table
   contents:
+    - title: Founder and chair of the SPEC Predictive Data Analytics Group
+      institution: SPEC Research Group
+      year: since 06/2021
     - title: Program committee
       institution: International Conference on Utility and Cloud Computing 2024
       year: since 07/2023
@@ -82,6 +85,9 @@
     - title: Program committee
       institution: International conference on Time Series and Forecasting 2023
       year: 02/2023 - 07/2023
+    - title: Elected editor of the annual newsletter
+      institution: SPEC Research Group
+      year: 04/2017 - 05/2023
     - title: Program committee
       institution: International Symposium on Cluster, Cloud and Internet Computing 2023
       year: 11/2022 - 05/2023
@@ -103,12 +109,6 @@
     - title: Organization committee
       institution: The First International Workshop on Performance-Data Analytics and Data-Management
       year: 10/2021 - 04/2022
-    - title: Founder and chair of the SPEC Predictive Data Analytics Group
-      institution: SPEC Research Group
-      year: since 06/2021
-    - title: Elected editor of the annual newsletter
-      institution: SPEC Research Group
-      year: since 04/2017
     - title: Elected release manager of the RG Cloud Working Group
       institution: SPEC Research Group
       year: 10/2018 - 05/2021
