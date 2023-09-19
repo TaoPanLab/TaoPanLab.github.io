@@ -12,7 +12,7 @@ profile:
   location: University of Chicago, US
   email: andrebauer@uchicago.edu
   googlescholar: https://scholar.google.de/citations?user=E8LJS8UAAAAJ&hl
-  uri: http://www.cfn.uchicago.edu/people/andre-bauer/
+  uri: https://cs.uchicago.edu/people/andre-bauer/
   
 
 news: true  # includes a list of news items
