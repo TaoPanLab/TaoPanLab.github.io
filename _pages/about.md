@@ -24,14 +24,11 @@ showbib: false
 
 I am a computer scientist working as a postdoctoral scholar at [Globus Labs](https://labs.globus.org/) led by Prof. Ian Foster in the Department of Computer Science at the University of Chicago since November 2022. I am also the founder and elected chair of the [SPEC RG Predictive Data Analytics Working Group](https://research.spec.org/working-groups/rg-predictive-data-analytics/).
 
-In a nutshell, my research vision is to provide intuitive, efficient, and sustainable data science solutions across all disciplines and domains. Therefore, I focus on fusing Software Engineering, Performance Engineering, and Data Science. More precisely, my research vision encompasses the following three main pillars:
-* Improvement of data science methods as well as their infrastructure (i.e., improve performance).
-* Development of an automated framework to streamline the data science task (i.e., improve usability).
-* Raise awareness and support for sustainable data science (i.e., improve energy efficiency).
+In a nutshell, my research aims to expand the potential of data science in scientific computing by contributing to key aspects of its development in the context of performance/sustainability and usability. In other words, my research creates intuitive, efficient, and sustainable data science solutions across disciplines and domains. To enable this a vision, I focus on challenges that span software engineering, performance engineering, sustainability, and data science perspectives. 
 
 In general, my research interest lies in, but is not limited to:
+* Data science: My focus is on data analytics, clustering, and imputation. I am also interested in benchmarking and developing data analytics methods. In addition, my research is inherently interdisciplinary, and I apply a translational approach to transfer methods and techniques in various domains.
+* Data science clouds: I am interested in the development, autonomous management (i.e., autonomous scaling of resources), benchmarking of various building blocks of such clouds, and runtime prediction and scheduling of data analytic tasks.
 * Data management: The focus is on FAIR (findable, accessible, interoperable, and reusable) data management and the promotion of publicly available research data.
 * Data privacy: The idea here is to exchange data with third parties, preserving the privacy of the data. I am interested in synthetic data generation and homomorphic encryption.
-* Data science clouds: I am interested in the development, autonomous management (i.e., autonomous scaling of resources), benchmarking of various building blocks of such clouds, and runtime prediction and scheduling of data analytic tasks.
-* Data science: My focus is on data analytics, clustering, and imputation. I am also interested in benchmarking and developing data analytics methods. In addition, I work on the application of such methods in interdisciplinary projects.
 * Sustainable data science: Specifically, this involves the development of an energy efficiency benchmark for Deep and Machine Learning.
