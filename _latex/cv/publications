@@ -4,9 +4,13 @@
 
 \showbibcv{bauer2023similiar}
 
+\showbibcv{strasser2023container}
+
 \showbibcv{bauer2021benchmark}
 
-\showbibcv{BaZuHeZeHoKo-PIEEE-Forecasting}
+\showbibcv{papadopoulos2019methodological}
+
+\showbibcv{BaZuHeZeHoKo2020-PIEEE-Forecasting}
 
 \showbibcv{bauer2020telescope}
 
@@ -16,11 +20,6 @@
 
 \showbibcv{bauer2018chameleon}
 
-\showbibcv{strasser2023container}
-
 \showbibcv{herbst2018quantifying}
-
-\showbibcv{papadopoulos2019methodological}
-
 
 \end{cvtext}
