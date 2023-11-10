@@ -134,14 +134,15 @@ layout: default
           <!-- News -->
           {% if page.news -%}
             <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit;">Most Recent News</a></h2>
-            An overview of all news can be found at <a href="{{ '/news/' | relative_url }}" >here</a>.
             {%- include news.html %}
+            An overview of all news can be found <a href="{{ '/news/' | relative_url }}" >here</a>.
           {%- endif %}
 
           <!-- Selected papers -->
           {% if page.selected_papers -%}
             <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">Selected Publications</a></h2>
             {%- include selected_papers.html %}
+            The list of all publications can be found <a href="{{ '/publications/' | relative_url }}" >here</a>.
           {%- endif %}
               
           <!-- Social -->
