@@ -17,4 +17,4 @@ bibliography: "_bibliography/papers.bib"
 {% bibliography -f papers -q @*[key=Mansi2023Multi]* %}
 
 5
-{% bibliography -f papers -q @*[key="Mansi2023Multi"]* %}
+{% bibliography -f papers -q @*[key=Mansi2023Multi]* -L _layouts/cv.html %}
