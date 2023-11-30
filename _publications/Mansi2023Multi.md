@@ -13,3 +13,8 @@ bibliography: "_bibliography/papers.bib"
 3
 {% cite Mansi2023Multi %}.
 
+4
+{% bibliography -f papers -q @*[key=Mansi2023Multi]* %}
+
+5
+{% bibliography -f papers -q @*[key="Mansi2023Multi"]* %}
