@@ -10,3 +10,11 @@ bibliography: "_bibliography/papers.bib"
 {% bibliography -f papers -q @*[key='Mansi2023Multi']* %}
 
 The authors of this entry are {% for author in entry.author %}{{ author }}{% unless forloop.last %}, {% endunless %}{% endfor %}.
+
+
+{% cite Mansi2023Multi %}.
+
+References
+----------
+
+{% bibliography %}
