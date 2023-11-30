@@ -7,4 +7,6 @@ bibliography: "_bibliography/papers.bib"
 
 {% assign entry = site.data.papers[Mansi2023Multi] %}
 
+{% bibliography -f papers -q @*[key='Mansi2023Multi']* %}
+
 The authors of this entry are {% for author in entry.author %}{{ author }}{% unless forloop.last %}, {% endunless %}{% endfor %}.
