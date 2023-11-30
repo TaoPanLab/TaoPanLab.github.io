@@ -1,0 +1,44 @@
+name: Convert Bib to JSON
+
+on:
+   push:
+     paths:
+       - '_bibliography/**'
+   workflow_dispatch:
+     branches:
+       - master
+jobs:
+  convert-bib-to-json:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v3
+      with:
+        python-version: 3.8
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install bibtexparser
+
+    - name: Convert Bib to JSON
+      run: |
+        python convert_bib_to_json.py  # Replace with the actual script name if you have one
+      working-directory: _bibliography  # Adjust to the directory where your bib file is
+
+    - name: Move JSON file to _data folder
+      run: |
+        mv papers.json ../_data/  # Adjust the file name if needed
+      working-directory: _bibliography  # Adjust to the directory where your bib file is
+
+    - name: Commit and push changes
+      run: |
+        git config --local user.email "action[bot]@github.com"
+        git config --local user.name "github-actions[bot]"
+        git add ../_data/papers.json  # Adjust the file name if needed
+        git commit -m "Convert Bib to JSON"
+        git push
