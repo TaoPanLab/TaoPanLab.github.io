@@ -5,7 +5,7 @@ inline: true
 bibliography: "_bibliography/papers.bib"
 ---
 1
-{% bibliography --file _bibliography/papers.bib --key Mansi2023Multi --cited %}
+{% bibliography -f papers --key Mansi2023Multi --cited %}
 2
 {% reference Mansi2023Multi --file _bibliography/papers.bib %}
 
