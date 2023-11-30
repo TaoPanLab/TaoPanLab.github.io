@@ -30,8 +30,8 @@ jobs:
         python -c "
         import bibtexparser
 
-        input_file = '_bibliography/papers.bib'
-        output_file = '_data/papers.json'
+        input_file = './_bibliography/papers.bib'
+        output_file = './_data/papers.json'
         
         with open(input_file, 'r', encoding='utf-8') as bib_file:
             bib_database = bibtexparser.load(bib_file)
