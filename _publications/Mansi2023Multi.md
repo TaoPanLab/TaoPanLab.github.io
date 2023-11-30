@@ -1,20 +1,9 @@
 ---
 layout: post
 date: 2023-04-28 15:59:00-0400
-inline: true
+publication: true
 bibliography: "_bibliography/papers.bib"
 ---
-1
-{% bibliography -f papers --key Mansi2023Multi %}
 
-2
-{% reference Mansi2023Multi -f papers %}
-
-3
-{% cite Mansi2023Multi %}.
-
-4
 {% bibliography -f papers -q @*[key=Mansi2023Multi]* %}
 
-5
-{% bibliography -f papers -q @*[key=Mansi2023Multi]* -L _layouts/cv.html %}
