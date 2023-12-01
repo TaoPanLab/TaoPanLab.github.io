@@ -16,6 +16,7 @@ layout: default
 <div class="publications">
     { page.title }
     h
+    {{ page.filename }}
     {% bibliography -f papers -q @*[key={{ page.title }}]* %}
 
 {{ content }}
