@@ -528,6 +528,10 @@ footer.sticky-bottom {
         font-weight: bolder;
       }
       .author {
+        .list{
+          text-align: center;
+          font-size: 1.25rem;
+        }
         a {
           border-bottom: 1px dashed var(--global-theme-color);
           &:hover {
