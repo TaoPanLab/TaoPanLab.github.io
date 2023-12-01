@@ -522,6 +522,9 @@ footer.sticky-bottom {
   margin-top: 1em;
   margin-bottom: 1em;
 }
+.publications h1.title {
+  font-weight: 300;
+}
 .publications h2 {
   margin-bottom: 1rem;
 }
