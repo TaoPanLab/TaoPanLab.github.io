@@ -2,7 +2,7 @@
 ---
 <!-- _layouts/bib.html -->
       {% if page.publication -%}
-      <h1>{entry.title}}{%- if entry.titleaddon %} {{ entry.titleaddon }}{%- endif %} </h1>
+      <h1>{{entry.title}}{%- if entry.titleaddon %} {{ entry.titleaddon }}{%- endif %} </h1>
 
       <div class="bibtex">
             {% highlight bibtex %}{{ entry.bibtex }}{% endhighlight %}
