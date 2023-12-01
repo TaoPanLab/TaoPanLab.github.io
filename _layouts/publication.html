@@ -17,6 +17,7 @@ layout: default
     { page.title }
     h
     {{ page.filename }}
+    j
     {% bibliography -f papers -q @*[key={{ page.title }}]* %}
 
 {{ content }}
