@@ -523,7 +523,11 @@ footer.sticky-bottom {
   margin-bottom: 1em;
 }
 .publications h1.title {
-  font-weight: 300;
+  color: var(--global-text-color);
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 .publications h2 {
   margin-bottom: 1rem;
