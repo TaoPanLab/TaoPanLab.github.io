@@ -14,7 +14,8 @@ layout: default
 {% endif %}
 
 <div class="publications">
-    {{ page.title }}
+    { page.title }
+    h
     {% bibliography -f papers -q @*[key={{ page.title }}]* %}
 
 {{ content }}
