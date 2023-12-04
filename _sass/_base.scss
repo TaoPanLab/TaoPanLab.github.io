@@ -552,13 +552,6 @@ footer.sticky-bottom {
           font-size: 1.25rem;
           margin-bottom: 1rem;
         }
-        a {
-          border-bottom: 1px dashed var(--global-theme-color);
-          &:hover {
-              border-bottom-style: solid;
-              text-decoration: none;
-          }
-        }
         > em {
           border-bottom: 1px solid;
           font-style: normal;
