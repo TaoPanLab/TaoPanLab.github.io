@@ -19,6 +19,7 @@ layout: default
 
 
 {% assign path = "publications/" | append: page.key | append: ".md" %}
+{% assign path2 = "_publications/" | append: page.key | append: ".md" %}
 
 {{path}}
 
@@ -27,6 +28,8 @@ layout: default
     Existiert
 {% endif %}
 
+{% assign file = site.static_files | where: "path", path2 | first %}
+{% if file %}<img src="{{ jpg_path }}">{% endif %}
 
 
 {% if site.static_files | where: "path", path | size > 0 %}
