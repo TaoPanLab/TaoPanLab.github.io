@@ -18,13 +18,15 @@ layout: default
 </div>
 
 
-{% assign path = "/_publications/" | append: {{ page.key }} | append: ".md" %}
+{% assign path = "/_publications/" | append: page.key | append: ".md" %}
+
+{{path}}
+
+{% assign path2 = "/_publications/" | append: {{ page.key }} | append: ".md" %}
+
+{{path2}}
 
 {% if site.static_files | where: "path", path | size > 0 %}
   [Link Text]({{ path | relative_url }})
 {% endif %}
 
-
-{% for static_file in site.static_files %}
-    {{static_file.path}}
-{% endfor %}
