@@ -42,11 +42,15 @@
 
         </div>
       </div>
-
+      {% if entry.website %}
+      <div class="article-url">
+        <a href="{{ entry.website }}">{{ entry.website }}</a>
+      </div>
+      {%- endif -%}
 
       {{ page.content }}
 
-
+      <h2>Citation</h2>
       <div class="bibtex">
             {% highlight bibtex %}{{ entry.bibtex }}{% endhighlight %}
       </div>

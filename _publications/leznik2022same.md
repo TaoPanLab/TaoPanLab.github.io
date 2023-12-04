@@ -10,4 +10,3 @@ Benchmarking is a core element in the toolbox of most systems researchers and is
 {% include video.html title="Video Presentation" url="https://www.youtube.com/embed/izw3IW8pNk0?si=ZLDPr3VhTVHYRz4Q" %}
 
 
-## Citation

@@ -17,4 +17,3 @@ If this work is interesting to you and you would like to collaborate, please fee
 * Erasing memories during model inference
 * Applying memory injections to additional model architectures
 
-## Citation
