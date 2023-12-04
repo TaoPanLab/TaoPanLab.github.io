@@ -601,13 +601,6 @@ footer.sticky-bottom {
   font-size: 1.25rem;
   margin-bottom: 1rem;
 }
-.publications ol.bibliography li .author a {
-  border-bottom: 1px dashed var(--global-theme-color);
-}
-.publications ol.bibliography li .author a:hover {
-  border-bottom-style: solid;
-  text-decoration: none;
-}
 .publications ol.bibliography li .author > em {
   border-bottom: 1px solid;
   font-style: normal;
