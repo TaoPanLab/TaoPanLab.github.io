@@ -175,13 +175,19 @@
             {% if post.key ==  entry.key  %}
               {% assign post_found = true %}
               {% assign post_path = post.url | relative_url %}
+              {% assign post_redirect = post.redirect %}
               {% break %}
             {% endif %}
           {% endfor %}
 
           {% if post_found %}
             <!-- The post with the name "Lala" exists -->
-            <a href="{{ post_path }}" class="btn btn-sm z-depth-0" role="button">Read more</a>
+            {% if post_redirect %}
+              <a href="{{ post_redirect }}" class="btn btn-sm z-depth-0" role="button" target="_blank">Read more</a>
+            {%- else -%}
+              <a href="{{ post_path }}" class="btn btn-sm z-depth-0" role="button">Read more</a>
+            {%- endif %}
+
           {% endif %}
 
 

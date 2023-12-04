@@ -1,8 +1,8 @@
 ---
 layout: publication
-date: 2023-04-28 15:59:00-0400
 publication: true
 key: Mansi2023Multi
+redirect: https://msakarvadia.github.io/memory_injections/
 ---
 
 ## Abstract
