@@ -40,7 +40,7 @@ layout: default
 
 
 {% assign post_found = false %}
-{{ page.key }} nur zum test
+
 {% for post in site.publications %}
   {% if post.key ==  page.key  %}
     {% assign post_found = true %}
@@ -50,7 +50,7 @@ layout: default
 
 {% if post_found %}
   <!-- The post with the name "Lala" exists -->
-  {{ post.key }}
+  Post found
   <!-- Add other content related to the post here -->
 {% else %}
   <!-- The post with the name "Lala" does not exist -->
