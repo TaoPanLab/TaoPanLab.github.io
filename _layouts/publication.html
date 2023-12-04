@@ -16,3 +16,10 @@ layout: default
 <div class="publications">
         {% bibliography -f papers -q @*[key={{ page.key }}]* %}
 </div>
+
+
+{% assign file_path = "/_publications/{{page.key}}.md" %}
+
+{% if site.static_files | where: "path", file_path | size > 0 %}
+  [Link Text]({{ file_path | relative_url }})
+{% endif %}
