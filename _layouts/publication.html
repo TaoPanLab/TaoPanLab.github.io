@@ -40,9 +40,9 @@ layout: default
 
 
 {% assign post_found = false %}
-{{ page.key }}
+{{ page.key }} nur zum test
 {% for post in site.publications %}
-  {% if post.key == "{{ page.key }}" %}
+  {% if post.key ==  page.key  %}
     {% assign post_found = true %}
     {% break %}
   {% endif %}
