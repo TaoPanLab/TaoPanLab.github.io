@@ -1,7 +1,7 @@
 ---
 layout: publication
 publication: true
-key: strasser2022autoscaling
+key: bauer2021benchmark
 ---
 
 ## Abstract
