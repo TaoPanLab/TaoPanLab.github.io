@@ -130,8 +130,13 @@ td.news-date {
 /*******************************************************************************
  * Styles for the base elements of the theme.
  ******************************************************************************/
-p, h1, h2, h3, h4, h5, h6, em, div, li, span, strong {
+h1, h2, h3, h4, h5, h6, em, div, li, span, strong {
   color: var(--global-text-color);
+}
+
+p {
+  color: var(--global-text-color);
+  text-align: justify;
 }
 
 hr {
@@ -765,6 +770,11 @@ progress::-moz-progress-bar {
   width: 0%;
   display: block;
   height: inherit;
+}
+
+.video_wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9, for an aspect ratio of 1:1 change to this value to 100% */
 }
 
 /*******************************************************************************
