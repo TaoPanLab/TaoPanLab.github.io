@@ -23,3 +23,8 @@ layout: default
 {% if site.static_files | where: "path", path | size > 0 %}
   [Link Text]({{ path | relative_url }})
 {% endif %}
+
+
+{% for static_file in site.static_files %}
+    {{static_file.path}}
+{% endfor %}
