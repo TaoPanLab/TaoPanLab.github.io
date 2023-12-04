@@ -535,6 +535,15 @@ footer.sticky-bottom {
 .publications h2 span {
   font-size: 1.5rem;
 }
+.publications h2.section {
+  margin-bottom: 1rem;
+  color: var(--global-text-color);
+}
+.publications h2.abstract {
+  margin-bottom: 1rem;
+  color: var(--global-text-color);
+  text-align: center;
+}
 .publications h2.year {
   color: var(--global-divider-color);
   border-bottom: 1px solid var(--global-divider-color);
