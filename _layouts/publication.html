@@ -42,7 +42,8 @@ layout: default
 {% assign post_found = false %}
 
 {% for post in site.publications %}
-  {% if post.title == "Mansi2023Multi" %}
+  {{ post.title }}
+  {% if post.key == "Mansi2023Multi" %}
     {% assign post_found = true %}
     {% break %}
   {% endif %}
