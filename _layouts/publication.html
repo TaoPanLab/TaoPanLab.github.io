@@ -25,14 +25,14 @@ layout: default
 {% for post in site.publications %}
   {% if post.key ==  page.key  %}
     {% assign post_found = true %}
+    {% assign post_path = post.url | relative_url %}
     {% break %}
   {% endif %}
 {% endfor %}
 
 {% if post_found %}
   <!-- The post with the name "Lala" exists -->
-  {% assign p = link {{path}} %}
-  {{  {{p}} | relative_url }}
+  <a href="{{ post_path }}">test</a>
   <!-- Add other content related to the post here -->
 {% else %}
   <!-- The post with the name "Lala" does not exist -->
