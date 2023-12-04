@@ -525,6 +525,10 @@ footer.sticky-bottom {
   text-align: right;
 }
 
+.publications .article-url {
+  text-align: center;
+  margin-bottom: 2rem;
+}
 .publications h1 {
   color: var(--global-theme-color);
   font-size: 2rem;
@@ -595,7 +599,7 @@ footer.sticky-bottom {
 .publications ol.bibliography li .author .list {
   text-align: center;
   font-size: 1.25rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 .publications ol.bibliography li .author a {
   border-bottom: 1px dashed var(--global-theme-color);
