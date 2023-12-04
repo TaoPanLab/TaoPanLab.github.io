@@ -139,6 +139,10 @@ p {
   text-align: justify;
 }
 
+ul {
+  text-align: justify;
+}
+
 hr {
   border-top: 1px solid var(--global-divider-color);
 }
@@ -148,6 +152,7 @@ table td, table th {
 }
 table td {
   font-size: 1rem;
+  text-align: justify;
 }
 
 a, table.table a {
