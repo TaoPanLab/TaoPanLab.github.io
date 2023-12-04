@@ -18,26 +18,7 @@ layout: default
 </div>
 
 
-{% assign path = "publications/" | append: page.key | append: ".md" %}
-{% assign path2 = "_publications/" | append: page.key | append: ".md" %}
-
-{{path}}
-
-{% assign file_exists = site.static_files | where: "path", path  %}
-{% if file_exists.size != 0 %}
-    Existiert
-{% endif %}
-
-{% assign file = site.static_files | where: "path", path2 | first %}
-{% if file %}<img src="{{ jpg_path }}">{% endif %}
-
-
-{% if site.static_files | where: "path", path | size > 0 %}
-  <a href="({{ path | relative_url }}"></a>
-{% endif %}
-
-{% link _publications/Mansi2023Multi.md %}
-
+{% assign path = "_publications/" | append: page.key | append: ".md" %}
 
 {% assign post_found = false %}
 
@@ -50,7 +31,7 @@ layout: default
 
 {% if post_found %}
   <!-- The post with the name "Lala" exists -->
-  Post found
+  {% link path %}
   <!-- Add other content related to the post here -->
 {% else %}
   <!-- The post with the name "Lala" does not exist -->
