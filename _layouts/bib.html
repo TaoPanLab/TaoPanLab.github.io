@@ -44,7 +44,8 @@
       </div>
 
 
-      {{ page.content }}
+      {% include publication_page.html %}
+      
       <div class="bibtex">
             {% highlight bibtex %}{{ entry.bibtex }}{% endhighlight %}
       </div>

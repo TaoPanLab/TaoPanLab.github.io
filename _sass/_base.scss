@@ -486,6 +486,15 @@ footer.sticky-bottom {
       font-size: 1.5rem;
     }
   }
+  h2.section {
+    margin-bottom: 1rem;
+    color: var(--global-text-color);
+  }
+  h2.abstract {
+    margin-bottom: 1rem;
+    color: var(--global-text-color);
+    text-align: center;
+  }
   h2.year {
     color: var(--global-divider-color);
     border-bottom: 1px solid var(--global-divider-color);
