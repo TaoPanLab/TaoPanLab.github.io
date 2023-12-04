@@ -3,15 +3,14 @@
 
   <!-- Head -->
   <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta http-equiv="refresh" content="3; url=/">    <!-- Metadata, OpenGraph and Schema.org -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">    <!-- Metadata, OpenGraph and Schema.org -->
     
 
     <!-- Standard metadata -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Mansi2023multi | André  Bauer</title>
+    <title>Bauer2021benchmark | André  Bauer</title>
     <meta name="author" content="André  Bauer">
     <meta name="description" content="About a computer scientist.
 ">
@@ -32,7 +31,7 @@
     <!-- Styles -->
     
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="https://drandrebauer.github.io/publications/Mansi2023Multi/">
+    <link rel="canonical" href="https://drandrebauer.github.io/publications/bauer2021benchmark/">
     
     <!-- Dark Mode -->
     
@@ -113,40 +112,43 @@
 <div class="publications">
         <ol class="bibliography"><li>
 <!-- _layouts/bib.html -->
-      <h1 class="title">Memory Injections: Correcting Multi-Hop Reasoning Failures during Inference in Transformer-Based Language Models </h1>
+      <h1 class="title">Why Is It Not Solved Yet? Challenges for Production-Ready Autoscaling </h1>
       <div class="author">
         <div class="list">
-        <a href="https://msakarvadia.github.io" rel="external nofollow noopener" target="_blank">Mansi Sakarvadia</a>, <a href="https://aswathyajith.github.io" rel="external nofollow noopener" target="_blank">Aswathy Ajith</a>, <a href="https://www.linkedin.com/in/arham-khan-957315167/" rel="external nofollow noopener" target="_blank">Arham Khan</a>, <a href="https://www.linkedin.com/in/danielgrzenda/" rel="external nofollow noopener" target="_blank">Daniel Grzenda</a>, <a href="https://nathaniel-hudson.github.io" rel="external nofollow noopener" target="_blank">Nathaniel Hudson</a>, <em>André Bauer</em>, Kyle Chard, and Ian Foster</div>
+        <a href="https://se.informatik.uni-wuerzburg.de/software-engineering-group/staff/martin-straesser/" rel="external nofollow noopener" target="_blank">Martin Straesser</a>, <a href="https://se.informatik.uni-wuerzburg.de/software-engineering-group/staff/johannes-grohmann/" rel="external nofollow noopener" target="_blank">Johannes Grohmann</a>, <a href="https://www.linkedin.com/in/joakimkistowski/?originalSubdomain=de" rel="external nofollow noopener" target="_blank">Jóakim Kistowski</a>, <a href="https://se.informatik.uni-wuerzburg.de/software-engineering-group/staff/simon-eismann/" rel="external nofollow noopener" target="_blank">Simon Eismann</a>, <em>André Bauer</em>, and <a href="https://se.informatik.uni-wuerzburg.de/software-engineering-group/staff/samuel-kounev/" rel="external nofollow noopener" target="_blank">Samuel Kounev</a>
+</div>
       </div>
-      <h2 id="abstract">Abstract</h2>
-<p>Answering multi-hop reasoning questions requires retrieving and synthesizing information from diverse sources. Large Language Models (LLMs) struggle to perform such reasoning consistently. Here we propose an approach to pinpoint and rectify multi-hop reasoning failures through targeted memory injections on LLM attention heads. First, we analyze the per-layer activations of GPT-2 models in response to single and multi-hop prompts. We then propose a mechanism that allows users to inject pertinent prompt-specific information, which we refer to as “memories,” at critical LLM locations during inference. By thus enabling the LLM to incorporate additional relevant information during inference, we enhance the quality of multi-hop prompt completions. We show empirically that a simple, efficient, and targeted memory injection into a key attention layer can often increase the probability of the desired next token in multi-hop tasks, by up to 424%.</p>
+      
+      <div class="article-url">
+        <a href="https://dl.acm.org/doi/10.1145/3489525.3511680" rel="external nofollow noopener" target="_blank">https://dl.acm.org/doi/10.1145/3489525.3511680</a>
+      </div>
+<h2 id="abstract">Abstract</h2>
+<p>In many areas of decision making, forecasting is an essential pillar. Consequently, there are many different forecasting methods. According to the “No-Free-Lunch Theorem”, there is no single forecasting method that performs best for all time series. In other words, each method has its advantages and disadvantages depending on the specific use case. Therefore, the choice of the forecasting method remains a mandatory expert task. However, expert knowledge cannot be fully automated. To establish a level playing field for evaluating the performance of time series forecasting methods in a broad setting, we propose Libra, a forecasting benchmark that automatically evaluates and ranks forecasting methods based on their performance in a diverse set of evaluation scenarios. The benchmark comprises four different use cases, each covering 100 heterogeneous time series taken from different domains. The data set was assembled from publicly available time series and was designed to exhibit much higher diversity than existing forecasting competitions. Based on this benchmark, we perform a comprehensive evaluation to compare different existing time series forecasting methods.</p>
 
 <h2>Video Presentation</h2>
 
 <div class="video_wrapper">
-    <iframe style="width:100%;height:100%;position:absolute;left:0px;top:0px;" src="https://www.youtube.com/embed/VyXQHdrcj2Q?si=TGILiKGcnWTqgfpz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+    <iframe style="width:100%;height:100%;position:absolute;left:0px;top:0px;" src="https://www.youtube.com/embed/5SfonF3JGCw?si=RPbrURamwGFQdlEL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
 </div>
 
-<h2 id="call-for-collaboration">Call for Collaboration</h2>
-<p>If this work is interesting to you and you would like to collaborate, please feel free to reach out to <a href="mailto:%20sakarvadia@uchicago.edu">sakarvadia@uchicago.edu</a>. Some ideas we are excited about are (but not limited to):</p>
-<ul>
-  <li>Automating memory selections from external knowledge sources (e.g. knowledge graphs, vector databases)</li>
-  <li>Erasing memories during model inference</li>
-  <li>Applying memory injections to additional model architectures</li>
-</ul>
-
+<h2 id="tool">Tool</h2>
+<p>Libra is an accepted tool of Standard Performance Evaluation Corporation (SPEC). The source code can be found on the <a href="https://research.spec.org/tools/overview/libra/" rel="external nofollow noopener" target="_blank">SPEC tool website</a> or on <a href="https://github.com/DescartesResearch/ForecastBenchmark" rel="external nofollow noopener" target="_blank">GitHub</a>.</p>
 
 
       <h2>Citation</h2>
       <div class="bibtex">
-            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">Mansi2023Multi</span><span class="p">,</span>
-  <span class="na">title</span> <span class="p">=</span> <span class="s">{Memory Injections: Correcting Multi-Hop Reasoning Failures during Inference in Transformer-Based Language Models}</span><span class="p">,</span>
-  <span class="na">author</span> <span class="p">=</span> <span class="s">{Sakarvadia, Mansi and Ajith, Aswathy and Khan, Arham and Grzenda, Daniel and Hudson, Nathaniel and Bauer, André and Chard, Kyle and Foster, Ian}</span><span class="p">,</span>
-  <span class="na">year</span> <span class="p">=</span> <span class="s">{2023}</span><span class="p">,</span>
-  <span class="na">month</span> <span class="p">=</span> <span class="nv">dec</span><span class="p">,</span>
-  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{Proceedings of the 6th ACL BlackboxNLP Workshop on Analyzing and Interpreting Neural Networks for NLP (BlackboxNLP)}</span><span class="p">,</span>
-  <span class="na">publisher</span> <span class="p">=</span> <span class="s">{ACL}</span><span class="p">,</span>
-  <span class="na">pages</span> <span class="p">=</span> <span class="s">{}</span>
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">strasser2022autoscaling</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{{Why Is It Not Solved Yet? Challenges for Production-Ready Autoscaling}}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Straesser, Martin and Grohmann, Johannes and von Kistowski, Jóakim and Eismann, Simon and Bauer, André and Kounev, Samuel}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2022}</span><span class="p">,</span>
+  <span class="na">month</span> <span class="p">=</span> <span class="nv">apr</span><span class="p">,</span>
+  <span class="na">booktitle</span> <span class="p">=</span> <span class="s">{Proceedings of the 13th ACM/SPEC International Conference on Performance Engineering (ICPE)}</span><span class="p">,</span>
+  <span class="na">publisher</span> <span class="p">=</span> <span class="s">{ACM}</span><span class="p">,</span>
+  <span class="na">pages</span> <span class="p">=</span> <span class="s">{105–115}</span><span class="p">,</span>
+  <span class="na">note</span> <span class="p">=</span> <span class="s">{Best Industry Paper}</span><span class="p">,</span>
+  <span class="na">numpages</span> <span class="p">=</span> <span class="s">{11}</span><span class="p">,</span>
+  <span class="na">award</span> <span class="p">=</span> <span class="s">{true}</span><span class="p">,</span>
+  <span class="na">website</span> <span class="p">=</span> <span class="s">{https://dl.acm.org/doi/10.1145/3489525.3511680}</span>
 <span class="p">}</span></code></pre></figure>
       </div>
 </li></ol>
