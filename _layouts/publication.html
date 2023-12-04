@@ -31,8 +31,8 @@ layout: default
 
 {% if post_found %}
   <!-- The post with the name "Lala" exists -->
-  {% link {{path}} %}
-  {{ link {{path}} | relative_url }}
+  {% assign p = link {{path}} %}
+  {{  {{p}} | relative_url }}
   <!-- Add other content related to the post here -->
 {% else %}
   <!-- The post with the name "Lala" does not exist -->
