@@ -11,4 +11,10 @@ Answering multi-hop reasoning questions requires retrieving and synthesizing inf
 
 {% include video.html title="Video Presentation" url="https://www.youtube.com/embed/VyXQHdrcj2Q?si=TGILiKGcnWTqgfpz" %}
 
-This is a test message :)
+<h2> Call for Collaboration </h2>
+If this work is interesting to you and you would like to collaborate, please feel free to reach out to <a href="mailto: sakarvadia@uchicago.edu">sakarvadia@uchicago.edu</a>. Some ideas we are excited about are (but not limited to):
+* Automating memory selections from external knowledge sources (e.g. knowledge graphs, vector databases)
+* Erasing memories during model inference
+* Applying memory injections to additional model architectures
+
+## Citation
