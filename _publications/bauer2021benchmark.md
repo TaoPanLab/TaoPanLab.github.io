@@ -10,4 +10,4 @@ In many areas of decision making, forecasting is an essential pillar. Consequent
 {% include video.html title="Video Presentation" url="https://www.youtube.com/embed/5SfonF3JGCw?si=RPbrURamwGFQdlEL" %}
 
 ## Tool
-Libra is an accepted tool of Standard Performance Evaluation Corporation (SPEC). The source code can be found on the [SPEC tool website](https://research.spec.org/tools/overview/libra/) or on [GitHub](https://github.com/DescartesResearch/ForecastBenchmark). 
+Libra is an accepted tool of the Standard Performance Evaluation Corporation (SPEC). The source code can be found on the [SPEC tool website](https://research.spec.org/tools/overview/libra/) or on [GitHub](https://github.com/DescartesResearch/ForecastBenchmark). 
