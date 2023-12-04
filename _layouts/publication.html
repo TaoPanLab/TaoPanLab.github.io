@@ -42,8 +42,7 @@ layout: default
 {% assign post_found = false %}
 
 {% for post in site.publications %}
-  {{ post.title }}
-  {% if post.key == "Mansi2023Multi" %}
+  {% if post.key == {{ page.key }} %}
     {% assign post_found = true %}
     {% break %}
   {% endif %}
@@ -51,7 +50,7 @@ layout: default
 
 {% if post_found %}
   <!-- The post with the name "Lala" exists -->
-  {{ post.title }} check
+  {{ post.key }}
   <!-- Add other content related to the post here -->
 {% else %}
   <!-- The post with the name "Lala" does not exist -->
