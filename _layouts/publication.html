@@ -18,9 +18,8 @@ layout: default
 </div>
 
 
-{% assign path = "/_publications/" | append: {{ page.key }}s | append: ".md" %}
+{% assign path = "/_publications/" | append: {{ page.key }} | append: ".md" %}
 
 {% if site.static_files | where: "path", path | size > 0 %}
   [Link Text]({{ path | relative_url }})
 {% endif %}
-ok
