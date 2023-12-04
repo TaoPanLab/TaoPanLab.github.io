@@ -37,3 +37,22 @@ layout: default
 {% endif %}
 
 {% link _publications/Mansi2023Multi.md %}
+
+
+{% assign post_found = false %}
+
+{% for post in site.publications %}
+  {% if post.title == "Mansi2023Multi" %}
+    {% assign post_found = true %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+
+{% if post_found %}
+  <!-- The post with the name "Lala" exists -->
+  {{ post.title }}
+  <!-- Add other content related to the post here -->
+{% else %}
+  <!-- The post with the name "Lala" does not exist -->
+  Post not found.
+{% endif %}
