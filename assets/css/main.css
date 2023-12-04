@@ -585,6 +585,7 @@ footer.sticky-bottom {
 .publications ol.bibliography li .author .list {
   text-align: center;
   font-size: 1.25rem;
+  margin-bottom: 2rem;
 }
 .publications ol.bibliography li .author a {
   border-bottom: 1px dashed var(--global-theme-color);
