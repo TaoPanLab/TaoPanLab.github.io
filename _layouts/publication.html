@@ -22,21 +22,14 @@ layout: default
 
 {{path}}
 
-% assign file_exists = site.static_files | where: "path", path  %}
+{% assign file_exists = site.static_files | where: "path", path  %}
 {% if file_exists.size != 0 %}
     Existiert
 {% endif %}
 
 
-{% assign path2 = "/_publications/" | append: "test" | append: ".md" %}
-
-{{path2}}
 
 {% if site.static_files | where: "path", path | size > 0 %}
-  [Link Text]({{ path | relative_url }})
-{% endif %}
-
-{% if site.static_files | where: "path", path2 | size > 0 %}
-  [Link Text]({{ path2 | relative_url }})
+  <a href="({{ path | relative_url }}"></a>
 {% endif %}
 
