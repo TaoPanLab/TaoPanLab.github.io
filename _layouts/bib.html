@@ -184,7 +184,7 @@
             {% endif %}
           {% endfor %}
 
-          {% if post_found %}
+          {% if post_found and page.showbib %}
             <!-- The post with the name "Lala" exists -->
             {% if post_redirect %}
               <a href="{{ post_redirect }}" class="btn btn-sm z-depth-0" role="button" target="_blank">Read more</a>
