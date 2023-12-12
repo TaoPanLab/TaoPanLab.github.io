@@ -1,7 +1,7 @@
 ---
 layout: publication
 publication: true
-key: bauer2021benchmark
+key: Bauer2023Globus
 ---
 
 ## Abstract
