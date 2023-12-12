@@ -18,9 +18,19 @@
   - firstname: ["Nathaniel", "N."]
     url: https://nathaniel-hudson.github.io
 
-"Kyle":
-  - firstname: ["Chard", "C."]
+"Pan":
+  - firstname: ["Haochen", "H."]
+    url: https://sites.google.com/view/haochenpan/
+
+"Chard":
+  - firstname: ["Kyle", "K."]
     url: https://kylechard.com
+  - firstname: [ "Ryan", "R." ]
+    url: https://www.linkedin.com/in/ryan-chard-59682b25/?originalSubdomain=nz
+
+"Foster":
+  - firstname: ["Ian", "I", "Ian Tremere" "I. T."]
+    url: http://www.ianfoster.org/wordpress/
 
 "Leznik":
   - firstname: ["Mark", "M."]
