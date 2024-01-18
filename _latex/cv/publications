@@ -2,6 +2,8 @@
 
 \begin{cvtext}
 
+\showbibcv{Bauer2023Globus}
+
 \showbibcv{bauer2023similiar}
 
 \showbibcv{strasser2023container}
@@ -19,7 +21,5 @@
 \showbibcv{bauer2019chamulteon}
 
 \showbibcv{bauer2018chameleon}
-
-\showbibcv{herbst2018quantifying}
 
 \end{cvtext}
