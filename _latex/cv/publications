@@ -1,6 +1,8 @@
-\mcvsection{Ausgewählte Publikationen(67 insgesammt)}{Selected Publications (67 total)}
+\mcvsection{Ausgewählte Publikationen(74 insgesammt)}{Selected Publications (74 total)}
 
 \begin{cvtext}
+
+\showbibcv{bauer2024Unveiling}
 
 \showbibcv{Bauer2023Globus}
 
@@ -9,8 +11,6 @@
 \showbibcv{strasser2023container}
 
 \showbibcv{bauer2021benchmark}
-
-\showbibcv{papadopoulos2019methodological}
 
 \showbibcv{BaZuHeZeHoKo2020-PIEEE-Forecasting}
 
