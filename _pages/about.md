@@ -9,10 +9,10 @@ profile:
   align: right
   image: me.jpg
   image_circular: true # crops the image to make it circular
-  location: University of Chicago, US
-  email: andrebauer@uchicago.edu
+  location: Illinois Institute of Technology, US
+  email: andre.bauer@iit.edu
   googlescholar: https://scholar.google.de/citations?user=E8LJS8UAAAAJ&hl
-  uri: https://cs.uchicago.edu/people/andre-bauer/
+  uri: https://www.iit.edu/directory/people/andre-bauer
   
 
 news: true  # includes a list of news items
@@ -22,7 +22,7 @@ social: false  # includes social icons at the bottom of the page
 showbib: false
 ---
 
-I am a computer scientist working as a postdoctoral scholar at [Globus Labs](https://labs.globus.org/) led by Prof. Ian Foster in the Department of Computer Science at the University of Chicago since November 2022. I am also the founder and elected chair of the [SPEC RG Predictive Data Analytics Working Group](https://research.spec.org/working-groups/rg-predictive-data-analytics/).
+I am an Assistant Professor in the Department of Computer Science at the Illinois Institute of Technology. Previously, I worked as a postdoctoral scholar at [Globus Labs](https://labs.globus.org/) led by Prof. Ian Foster in the Department of Computer Science at the University of Chicago since November 2022. I am also the founder and elected chair of the [SPEC RG Predictive Data Analytics Working Group](https://research.spec.org/working-groups/rg-predictive-data-analytics/).
 
 In a nutshell, my research aims to expand the potential of data science in scientific computing. In other words, my research contributes to key aspects of developing intuitive, efficient, and sustainable data science solutions across disciplines and domains. In addition, my research is inherently interdisciplinary, and I apply a translational approach as I work to develop, apply, and evaluate methods and techniques in various domains. In the long term, I expect that my research will contribute to the creation of dynamic data science ecosystems that will inherently accelerate scientific computing applications. 
 
